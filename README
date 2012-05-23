@@ -49,6 +49,10 @@ Return *iam_request* if there is no current request::
 
     CrequestMiddleware.get_request(iam_request)
 
+And finally delete::
+
+    CrequestMiddleware.del_request()
+
 The middleware automatically sets/deletes the current request for HTTP requests.
         For other uses (management commands, scripts), you will need to do this
         yourself.
