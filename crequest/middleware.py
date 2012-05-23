@@ -27,3 +27,54 @@
 # ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+try:
+    from threading import currentThread
+except :
+    # Django 1.2 and older
+    from django.utils.thread_support import currentThread
+
+class CrequestMiddleware(object):
+    """
+    Always have access to the current request
+    """
+    _request = {}
+
+    def proccess_request(self, request):
+        """
+        Store request
+        """
+        self.__class__.set_request(request)
+
+    def proccess_response(self, request, response):
+        """
+        Delete request
+        """
+        self.__class__.del_request()
+
+    def proccess_exception(self, request, exception):
+        """
+        Delete request
+        """
+        self.__class__.del_request()
+
+    @classmethod
+    def get_request(cls, default=None):
+        """
+        Retrieve request
+        """
+        return cls._request.get(currentThread, default)
+
+    @classmethod
+    def set_request(cls, request):
+        """
+        Store request
+        """
+        cls._request[currentThread()] = request
+
+    @classmethod
+    def del_request(cls):
+        """
+        Delete request
+        """
+        cls._request.pop(currentThread(), None)
