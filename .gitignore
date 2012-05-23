@@ -1,0 +1,8 @@
+*.pyc
+build
+dist
+*.egg-info
+.coverage
+.idea/
+django_crequest/
+manage.py
