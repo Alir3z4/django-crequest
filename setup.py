@@ -4,6 +4,7 @@ setup(
     name='django-crequest',
     version=".".join(map(str, __import__('crequest').__version__)),
     description='Middleware to make current request always available.',
+    long_description=open('README').read(),
     author='Alireza Savand',
     author_email='alireza.savand@gmail.com',
     url='https://github.com/Alir3z4/django-crequest',
