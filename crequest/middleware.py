@@ -28,11 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-try:
-    from threading import currentThread
-except :
-    # Django 1.2 and older
-    from django.utils.thread_support import currentThread
+import thread
 
 class CrequestMiddleware(object):
     """
@@ -40,19 +36,20 @@ class CrequestMiddleware(object):
     """
     _request = {}
 
-    def proccess_request(self, request):
+    def process_request(self, request):
         """
         Store request
         """
         self.__class__.set_request(request)
 
-    def proccess_response(self, request, response):
+    def process_response(self, request, response):
         """
         Delete request
         """
         self.__class__.del_request()
+        return response
 
-    def proccess_exception(self, request, exception):
+    def process_exception(self, request, exception):
         """
         Delete request
         """
@@ -63,18 +60,18 @@ class CrequestMiddleware(object):
         """
         Retrieve request
         """
-        return cls._request.get(currentThread, default)
+        return cls._request.get(thread.get_ident(), default)
 
     @classmethod
     def set_request(cls, request):
         """
         Store request
         """
-        cls._request[currentThread()] = request
+        cls._request[thread.get_ident()] = request
 
     @classmethod
     def del_request(cls):
         """
         Delete request
         """
-        cls._request.pop(currentThread(), None)
+        cls._request.pop(thread.get_ident(), None)
