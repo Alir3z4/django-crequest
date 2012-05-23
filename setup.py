@@ -16,7 +16,7 @@ setup(
         'web'
     ],
     platforms='OS Independent',
-    provides='crequest',
+    provides=['crequest',],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Programming Language :: Python',
