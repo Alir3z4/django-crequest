@@ -20,10 +20,10 @@ Or you can grab the latest version tarball and ::
 
     $ python setup.py install
 
-To enable django-cuser in your project
+To enable django-crequest in your project
 
-* Add 'cuser' to *INSTALLED_APPS* in your **settings.py**
-* Add 'cuser.middleware.CuserMiddleware' to MIDDLEWARE_CLASSES after the authentication and session middleware.
+* Add 'crequest' to *INSTALLED_APPS* in your **settings.py**
+* Add 'crequest.middleware.CrequestMiddleware' to MIDDLEWARE_CLASSES after the authentication and session middleware.
 
 How to use it
 =============
