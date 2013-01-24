@@ -1,12 +1,13 @@
-django-crequest - Take care of current request is silent way.
-=============================================================
+===============
+django-crequest
+===============
 
-Copyright (C) 2012 Alireza Savand <alireza.savand@gmail.com>
+.. contents:: Table of contents
 
 Overview
 ========
-
-**crequest** will bring you current request object of your django application from anywhere in your code.
+- **crequest** Take care of current request is silent way.
+- **crequest** will bring you current request object of your django application from anywhere in your code.
 
 Installing
 ==========
