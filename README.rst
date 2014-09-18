@@ -15,7 +15,7 @@ Installing
 django-crequest is available at http://pypi.python.org/pypi/django-crequest
 So it can be install it by pip::
 
-    $ pyhton pip install django-crequest
+    $ python pip install django-crequest
 
 Or you can grab the latest version tarball and ::
 
