@@ -1,5 +1,5 @@
+import threading
 
-import thread
 
 class CrequestMiddleware(object):
     """
@@ -31,18 +31,18 @@ class CrequestMiddleware(object):
         """
         Retrieve request
         """
-        return cls._request.get(thread.get_ident(), default)
+        return cls._request.get(threading.current_thread(), default)
 
     @classmethod
     def set_request(cls, request):
         """
         Store request
         """
-        cls._request[thread.get_ident()] = request
+        cls._request[threading.current_thread()] = request
 
     @classmethod
     def del_request(cls):
         """
         Delete request
         """
-        cls._request.pop(thread.get_ident(), None)
+        cls._request.pop(threading.current_thread(), None)
