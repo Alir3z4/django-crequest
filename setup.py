@@ -10,7 +10,7 @@ setup(
     author_email='alireza.savand@gmail.com',
     url='https://github.com/Alir3z4/django-crequest',
     packages=find_packages(exclude=['django_crequest']),
-    install_requires=['django>=1.2'],
+    install_requires=['Django>=1.2'],
     keywords=[
         'django',
         'request',
