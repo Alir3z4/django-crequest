@@ -27,9 +27,19 @@ To enable ``django-crequest`` in your project
 * Add ``crequest.middleware.CrequestMiddleware`` to ``MIDDLEWARE_CLASSES`` after the authentication and session middleware.
 
 
+Supported Python versions
+=========================
+
+``django-crequest`` currently can be run on multiple python versions:
+
+* Python 2 (2.7)
+* Python 3 (3.2, 3.3, 3.4)
+* PyPy
+
 
 How to use
 ==========
+
 First import the crequest's middleware::
 
     from crequest.middleware import CrequestMiddleware
