@@ -11,7 +11,7 @@ people who have submitted patches, reported bugs, added translations, helped
 answer newbie questions, and generally made ``django-crequest`` that much better:
 
 * Alireza Savand <alireza.savand@gmail.com>
-
+* Richard Royal <richard.royal@coxinc.com>
 
 A big THANK YOU goes to:
 
