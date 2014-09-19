@@ -4,5 +4,6 @@ dist
 *.egg-info
 .coverage
 .idea/
+.ropeproject/
 django_crequest/
 manage.py
