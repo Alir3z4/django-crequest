@@ -6,6 +6,7 @@
 * Feature: Typos and fix ``README.rst`` spellings and remove unneeded files.
 * Feature: Enhance documentation.
 * Feature: Change release version numbering to date based.
+* Feature: Add ``Python 2``, ``Python 3``, ``PyPy`` support.
 
 
 1.0 - 2012-05-23
