@@ -1,5 +1,6 @@
 from setuptools import setup, find_packages
 
+
 setup(
     name='django-crequest',
     version=".".join(map(str, __import__('crequest').__version__)),
@@ -19,15 +20,23 @@ setup(
     platforms='OS Independent',
     provides=['crequest',],
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
-        'Programming Language :: Python',
-        'Framework :: Django',
-        'Environment :: Web Environment',
-        'Intended Audience :: Developers',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
-        'Topic :: Software Development'
+        "Development Status :: 5 - Production/Stable",
+        "Development Status :: 6 - Mature",
+        "Environment :: Web Environment",
+        "Framework :: Django",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: BSD License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 2",
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.0",
+        "Programming Language :: Python :: 3.1",
+        "Programming Language :: Python :: 3.2",
+        "Programming Language :: Python :: 3.3",
+        "Programming Language :: Python :: 3.4",
+        "Topic :: Software Development",
+        "Topic :: Software Development :: Libraries",
     ],
 )
