@@ -2,7 +2,7 @@
 django-crequest
 ===============
 
-.. contents:: Table of contents
+.. contents:: 
 
 Overview
 ========
@@ -13,7 +13,7 @@ Installing
 ==========
 
 django-crequest is available at http://pypi.python.org/pypi/django-crequest
-So it can be install it by pip::
+So it can be installed it by pip::
 
     $ python pip install django-crequest
 
@@ -21,19 +21,20 @@ Or you can grab the latest version tarball and ::
 
     $ python setup.py install
 
-To enable django-crequest in your project
+To enable ``django-crequest`` in your project
 
-* Add 'crequest' to *INSTALLED_APPS* in your **settings.py**
-* Add 'crequest.middleware.CrequestMiddleware' to MIDDLEWARE_CLASSES after the authentication and session middleware.
+* Add ``crequest`` to *INSTALLED_APPS* in your **settings.py**
+* Add ``crequest.middleware.CrequestMiddleware`` to ``MIDDLEWARE_CLASSES`` after the authentication and session middleware.
 
-How to use it
-=============
 
+
+How to use
+==========
 First import the crequest's middleware::
 
     from crequest.middleware import CrequestMiddleware
 
-Get the current request ;)::
+Get the current ``request`` ;)::
 
     current_request = CrequestMiddleware.get_request()
 
@@ -55,6 +56,5 @@ And finally delete::
     CrequestMiddleware.del_request()
 
 The middleware automatically sets/deletes the current request for HTTP requests.
-        For other uses (management commands, scripts), you will need to do this
-        yourself.
+For other uses (management commands, scripts), you will need to do this yourself.
 
