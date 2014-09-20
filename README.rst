@@ -6,13 +6,13 @@ django-crequest
 
 Overview
 ========
-- **crequest** Take care of current request is silent way.
-- **crequest** will bring you current request object of your django application from anywhere in your code.
+- ``crequest`` takes care of current ``request`` in silent way.
+- ``crequest`` will bring you current ``request`` object of your Django application from anywhere in your code.
 
 Installing
 ==========
 
-django-crequest is available at http://pypi.python.org/pypi/django-crequest
+``django-crequest`` is available on http://pypi.python.org/pypi/django-crequest
 So it can be installed it by pip::
 
     $ python pip install django-crequest
