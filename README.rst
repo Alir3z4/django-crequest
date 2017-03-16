@@ -32,8 +32,8 @@ Supported Python versions
 
 ``django-crequest`` currently can be run on multiple python versions:
 
-* Python 2 (2.7)
-* Python 3 (3.2, 3.3, 3.4)
+* Python 2
+* Python 3
 * PyPy
 
 
@@ -50,8 +50,8 @@ Get the current ``request`` ;)::
 
 Done.
 
-Some info for some folks
-========================
+In depth & Complex details
+==========================
 
 Set the current request in UnKnown situations::
 
