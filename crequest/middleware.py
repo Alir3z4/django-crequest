@@ -1,7 +1,12 @@
 import threading
 
+try:
+    from django.utils.deprecation import MiddlewareMixin
+except ImportError:
+    MiddlewareMixin = object
 
-class CrequestMiddleware(object):
+
+class CrequestMiddleware(MiddlewareMixin):
     """
     Always have access to the current request
     """
