@@ -3,8 +3,8 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-crequest',
-    version=".".join(map(str, __import__('crequest').__version__)),
-    description='Middleware to make current request always available.',
+    version=__import__('crequest').__version__,
+    description='Middleware that makes the current request available from anywhere.',
     long_description=open('README.rst').read(),
     license=open('LICENSE', encoding='utf-8').read(),
     author='Alireza Savand',
