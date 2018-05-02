@@ -12,6 +12,7 @@ answer newbie questions, and generally made ``django-crequest`` that much better
 
 * Alireza Savand <alireza.savand@gmail.com>
 * Richard Royal <richard.royal@coxinc.com>
+* Robert Rollins <rrollins@caltech.edu>
 
 A big THANK YOU goes to:
 
