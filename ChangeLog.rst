@@ -1,3 +1,11 @@
+2018.5.1
+========
+----
+
+* Fixed #7: process_exception() should not delete the request when using MIDDLEWARE.
+* Feature #5: Fix encoding error in the setup.py file.
+
+
 2016.3.16
 =========
 ----
