@@ -1,3 +1,10 @@
+2018.5.11
+=========
+----
+
+* Fixed #9: Error when installing on Python 2.
+
+
 2018.5.1
 ========
 ----
